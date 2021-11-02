@@ -25,7 +25,10 @@ cabecalho = '''ACME Inc.               Uso do espaço em disco pelos usuários
 Nr.  Usuário        Espaço utilizado     % do uso
 '''
 
+n = int(input('Digite o número de usuários a serem exibidos: '))
+
 lista_de_dados.sort(reverse=True)
+lista_de_dados = lista_de_dados[:n]
 
 with open('relatorio.txt', 'w') as arquivo:
     tamanho_total_consumido = sum([tamanho for tamanho,_ in lista_de_dados])
