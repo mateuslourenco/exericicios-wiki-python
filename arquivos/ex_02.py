@@ -51,6 +51,7 @@ cabecalho = '''ACME Inc.               Uso do espaço em disco pelos usuários
 Nr.  Usuário        Espaço utilizado     % do uso
 '''
 
+
 with open('relatorio.txt', 'w') as arquivo:
     tamanho_total_consumido = sum([tamanho for _, tamanho in lista_de_dados])
     media = tamanho_total_consumido / len(lista_de_dados)
