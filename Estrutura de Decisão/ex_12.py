@@ -39,9 +39,9 @@ valor_desconto_inss = salario_bruto * desconto_inss
 valor_desconto_fgts = salario_bruto * desconto_fgts
 valor_total_descontos = valor_desconto_ir + valor_desconto_inss
 salario_liquido = salario_bruto - valor_total_descontos
-print(f'''Salário Bruto: ({valor_por_hora_trabalhado} * {total_de_horas_trabalhadas_mes})    : R$ {salario_bruto:.2f}
-(-) IR ({desconto_ir:.0%})                     : R$ {valor_desconto_ir:.2f}
-(-) INSS ({desconto_inss:.0%})                  : R$ {valor_desconto_inss:.2f}
-FGTS ({desconto_fgts:.0%})                      : R$ {valor_desconto_fgts:.2f}
-Total de descontos              : R$ {valor_total_descontos:.2f}
-Salário Liquido                 : R$ {salario_liquido:.2f}''')
+print(f'''Salário Bruto ({valor_por_hora_trabalhado} * {total_de_horas_trabalhadas_mes}):      R$ {salario_bruto:.2f}
+(-) IR ({desconto_ir:.0%}):                      R$ {valor_desconto_ir:.2f}
+(-) INSS ({desconto_inss:.0%}):                   R$ {valor_desconto_inss:.2f}
+FGTS ({desconto_fgts:.0%}):                       R$ {valor_desconto_fgts:.2f}
+Total de descontos:               R$ {valor_total_descontos:.2f}
+Salário Liquido:                  R$ {salario_liquido:.2f}''')
