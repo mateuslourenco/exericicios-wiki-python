@@ -14,7 +14,5 @@ else:
         print('Não foi informado um número inteiro positivo')
     else:
         num_str = str(numero)
-        num_invertido = ''
-        for i in range(len(num_str), 0, -1):
-            num_invertido += num_str[i - 1]
+        num_invertido = ''.join(reversed(num_str))
         print(num_invertido)
