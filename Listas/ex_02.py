@@ -6,4 +6,4 @@ for _ in range(10):
     lista.append(numero)
 
 # Para inverter a lista, também pode ser utilizado o método .reverse()
-print(lista[::-1]) # Somente imprime a lista na ordem inversa.
+print(lista[::-1])  # Somente imprime a lista na ordem inversa.
