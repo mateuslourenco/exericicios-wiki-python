@@ -10,6 +10,10 @@ def encontrar_maior_numero_digitos_consecutivos(numero):
     90123
     >>> encontrar_maior_numero_digitos_consecutivos(123789)
     789
+    >>> encontrar_maior_numero_digitos_consecutivos(1237890)
+    7890
+    >>> encontrar_maior_numero_digitos_consecutivos(0)
+    0
 
     :param numero:
     """
@@ -28,9 +32,8 @@ def encontrar_maior_numero_digitos_consecutivos(numero):
                 maiores_numeros.append(int(numero_localizado))
                 numero_localizado = ''
         except IndexError:
-            if numero_str[i] == prox_numero_dict[num]:
+            if prox_numero_dict[num] == prox_numero_dict[numero_str[i]]:
                 numero_localizado += num
-                maiores_numeros.append(int(numero_localizado))
                 maiores_numeros.append(int(numero_localizado))
 
     maior_numero_localizado = max(maiores_numeros)
