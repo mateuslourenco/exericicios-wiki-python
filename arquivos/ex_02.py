@@ -32,7 +32,6 @@ através de uma função separada, que será chamada pelo programa principal. O 
 ser feito através de uma função, que será chamada pelo programa principal.
 """
 
-
 def transformar_em_megabytes(tamanho_em_byes: str) -> float:
     return int(tamanho_em_byes) / (2**10) ** 2
 
